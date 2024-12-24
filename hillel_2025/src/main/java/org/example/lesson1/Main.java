@@ -1,4 +1,4 @@
-package org.example;
+package org.example.lesson1;
 
 public class Main {
     private static final double CONV_K = 2.20462;
