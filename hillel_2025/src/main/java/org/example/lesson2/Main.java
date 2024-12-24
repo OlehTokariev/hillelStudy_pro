@@ -2,6 +2,7 @@ package org.example.lesson2;
 
 public class Main {
     private static final double CONV_K = 2.20462;
+    private static final double CONV_M = 1.60934;
 
     public static void main(String[] args) {
         System.out.println("Welcome to the Converter App!");
@@ -10,9 +11,17 @@ public class Main {
         double kgs = 5;
         double pounds = convKgsToPounds(kgs);
         System.out.println("Result is " + pounds + " pounds.");
+
+        double miles = 10;
+        double kilometers = milesToKilometers(miles);
+        System.out.println(miles + " miles = " + kilometers + " kilometers.");
     }
 
     private static double convKgsToPounds(double kgs) {
         return kgs * CONV_K;
+    }
+
+    private static double milesToKilometers(double miles) {
+        return miles * CONV_M;
     }
 }
